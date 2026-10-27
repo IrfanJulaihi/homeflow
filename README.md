@@ -1,13 +1,15 @@
 # HomeFlow
 
-Home setup planner covering Phase 0 electrical safety through Phase 4 finishing touches.
+Responsive home setup planner covering Phase 0 electrical and safety through Phase 4 finishing touches.
+
+## Deployment on Cloudflare Pages
+
+Connect this repository to Cloudflare Pages. Build command: `npm run build`; output directory: `dist`; production branch: `main`.
 
 ## Development
 
-`npm install` then `npm run dev`
+Run `npm install` and `npm run dev`. The app is implemented in the standalone `index.html`; Vite is used for development and production packaging.
 
-## Cloudflare Pages
+## Data
 
-Connect this GitHub repository to Cloudflare Pages. Framework: Vite. Build command: `npm run build`. Output directory: `dist`.
-
-Data is saved in browser localStorage. Export/import JSON backups to move between devices. No cloud synchronization or login yet.
+Tasks and budgets are stored in browser localStorage. Use JSON export/import to move data between browsers. There is no authentication or cross-device sync yet.
